@@ -11,21 +11,39 @@ interface BlogPost {
 const posts: BlogPost[] = [
   {
     id: 1,
-    title: 'React ile Component Yapısı',
-    summary: 'Fonksiyonel ve class component yapılarının farklarını ve kullanım alanlarını öğrenin.',
-    date: '2025-05-10',
+    title: 'C# .NET Core ile Microservices Mimarisi',
+    summary: 'Modern .NET Core 8 kullanarak microservices mimarisi nasıl tasarlanır ve geliştirilir?',
+    date: '2025-01-15',
   },
   {
     id: 2,
-    title: 'TypeScript ile Güvenli Kodlama',
-    summary: 'TypeScript’in güçlü tip sistemi sayesinde daha sağlam uygulamalar geliştirin.',
-    date: '2025-04-28',
+    title: 'Angular ve .NET Core ile Full-Stack Geliştirme',
+    summary: 'Angular frontend ve .NET Core backend ile modern web uygulamaları geliştirme süreçleri.',
+    date: '2025-01-08',
   },
   {
     id: 3,
-    title: '.NET ve PostgreSQL ile REST API',
-    summary: 'Modern .NET uygulamaları için PostgreSQL destekli REST API nasıl geliştirilir?',
-    date: '2025-04-12',
+    title: 'Node.js ve MongoDB ile REST API Geliştirme',
+    summary: 'Node.js ve MongoDB kullanarak performanslı ve ölçeklenebilir REST API\'ler nasıl geliştirilir?',
+    date: '2024-12-20',
+  },
+  {
+    id: 4,
+    title: 'React ve TypeScript ile Modern Frontend Geliştirme',
+    summary: 'React ve TypeScript kullanarak tip güvenli ve sürdürülebilir frontend uygulamaları.',
+    date: '2024-12-10',
+  },
+  {
+    id: 5,
+    title: 'Entity Framework Core ile Veritabanı Yönetimi',
+    summary: 'EF Core kullanarak MSSQL, PostgreSQL ve MongoDB veritabanları ile etkili çalışma yöntemleri.',
+    date: '2024-11-25',
+  },
+  {
+    id: 6,
+    title: 'Agile Metodolojiler ve Yazılım Geliştirme Süreçleri',
+    summary: 'Agile yaklaşımlar ile takım çalışması ve proje yönetimi deneyimlerim.',
+    date: '2024-11-15',
   },
 ];
 
