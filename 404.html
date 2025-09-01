@@ -1,0 +1,14 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Redirecting…</title>
+<meta http-equiv="refresh" content="0; url=/my-portfolio/"></head><body>
+<script>
+(function() {
+  var l = window.location, base = '/my-portfolio';
+  if (l.pathname.startsWith(base)) {
+    var url = base + '/#' + l.pathname.substring(base.length) + l.search + l.hash;
+    l.replace(url);
+  } else {
+    l.replace(base + '/');
+  }
+})();
+</script>
+</body></html>
