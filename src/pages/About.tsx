@@ -136,8 +136,10 @@ const About: React.FC = () => {
         <div className="container">
           <div className="row g-4">
             <div className="col-12 text-center animate-fade-in-up">
-              <h2 className="fw-bold mb-5">Deneyim Özeti</h2>
+              <h2 className="fw-bold mb-5">İş Tecrübeleri</h2>
             </div>
+
+            {/* Çuhadaroğlu Metal A.Ş. */}
             <div className="col-md-6 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
               <div className="card border-0 shadow-sm h-100">
                 <div className="card-body">
@@ -145,14 +147,17 @@ const About: React.FC = () => {
                     <i className="fas fa-building me-2"></i>
                     Çuhadaroğlu Metal A.Ş.
                   </h5>
-                  <h6 className="text-muted">Full Stack Developer (Nisan 2025 - Günümüz)</h6>
-                  <p className="card-text">
-                    JavaScript tabanlı frontend, Node.js ve .NET ile oluşturulmuş backend projeleri 
-                    üzerinde müşteri ihtiyaçlarına göre yazılım geliştirmeleri.
-                  </p>
+                  <h6 className="text-muted">Full Stack Developer (Nisan 2025 – Günümüz)</h6>
+                  <ul className="card-text text-muted mt-3">
+                    <li>Şirket içinde geliştirilen gizli bir uygulamada görev aldım.</li>
+                    <li>JavaScript tabanlı frontend geliştirmeleri ile kullanıcı deneyimini güçlendirdim.</li>
+                    <li>Node.js ve .NET ile oluşturulmuş birden fazla backend projesinde yazılım geliştirmeleri yaptım.</li>
+                  </ul>
                 </div>
               </div>
             </div>
+
+            {/* Overtech Bilgi Teknolojileri */}
             <div className="col-md-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
               <div className="card border-0 shadow-sm h-100">
                 <div className="card-body">
@@ -160,11 +165,13 @@ const About: React.FC = () => {
                     <i className="fas fa-laptop-code me-2"></i>
                     Overtech Bilgi Teknolojileri
                   </h5>
-                  <h6 className="text-muted">Full Stack Developer (Nisan 2021 - Nisan 2025)</h6>
-                  <p className="card-text">
-                    BiletBank BBFaring, PavoPay ve OverEgov projelerinde frontend, backend, 
-                    web servis ve entegrasyon geliştirmeleri.
-                  </p>
+                  <h6 className="text-muted">Full Stack Developer (Nisan 2021 – Nisan 2025)</h6>
+                  <ul className="card-text text-muted mt-3">
+                    <li>Çeşitli kurumsal web ve mobil uygulamalarda frontend ve backend geliştirmeleri yaptım.</li>
+                    <li>Ödeme sistemleri, entegratörlük çözümleri ve kamuya yönelik yazılımlarda entegrasyonlar gerçekleştirdim.</li>
+                    <li>REST/SOAP tabanlı servisler ve özel entegratörlük uygulamalarında sorunların çözümü ve kullanıcı desteği sağladım.</li>
+                    <li>Kurumsal yazılımlarda sürdürülebilir, güvenilir ve ölçeklenebilir çözümler geliştirdim.</li>
+                  </ul>
                 </div>
               </div>
             </div>

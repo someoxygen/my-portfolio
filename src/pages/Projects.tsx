@@ -37,6 +37,14 @@ const projects: Project[] = [
     category: 'Full-Stack'
   },
   {
+    title: 'Messaging App',
+    description:
+      'Gerçek zamanlı mesajlaşma uygulaması. Flutter ile geliştirilmiş modern mesajlaşma uygulaması.',
+    technologies: ['Firebase', 'Flutter', 'Real-time', 'WebSocket'],
+    link: 'https://github.com/someoxygen/messaging-app',
+    category: 'Frontend'
+  },
+  {
     title: 'Çarşı Pazar Project',
     description:
       'Çarşı Pazar web uygulaması projesi. C# ile geliştirilmiş modern e-ticaret ve pazar yeri platformu.',

@@ -21,7 +21,6 @@ const Navbar: React.FC = () => {
       <div className="container">
         <Link className="navbar-brand fw-bold d-flex align-items-center" to="/">
           <span className="brand-text">Mustafa Yücel</span>
-          <span className="brand-dot ms-1">.</span>
         </Link>
         
         <button

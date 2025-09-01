@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
           <div className="col-lg-4 mb-4 mb-lg-0">
             <div className="animate-fade-in-up">
               <h4 className="fw-bold mb-3">
-                <span className="text-gradient">Mustafa Yücel</span>
+                <span className="text-white">Mustafa Yücel</span>
               </h4>
               <p className="text-muted mb-4">
                 4 yıllık endüstri deneyimine sahip, yaratıcı ve çözüm odaklı bir Full Stack Developer'ım. 
