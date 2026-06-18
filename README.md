@@ -1,51 +1,108 @@
-<<<<<<< HEAD
-# my-portfolio
-Portfolio
-=======
-# Getting Started with Create React App
+# Mustafa Yücel Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React ve TypeScript ile geliştirilmiş kişisel portfolyo web sitesi. Proje; hakkımda bilgisi, teknik yetenekler, iş deneyimi, özgeçmiş ve GitHub projelerini tek bir responsive arayüzde sunar.
 
-## Available Scripts
+Canlı site: [someoxygen.github.io/my-portfolio](https://someoxygen.github.io/my-portfolio)
 
-In the project directory, you can run:
+## Özellikler
 
-### `npm start`
+- Responsive navbar ve mobil uyumlu menü
+- Hakkımda, projeler ve özgeçmiş sayfaları
+- Proje kartları ve kategori filtreleme
+- Teknik yetenekler, deneyim, eğitim ve sertifika bölümleri
+- Bootstrap tabanlı modern kart ve grid tasarımı
+- React Router ile sayfa yönlendirme
+- GitHub Pages dağıtım desteği
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Kullanılan Teknolojiler
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- React
+- TypeScript
+- React Router
+- Bootstrap
+- React Icons
+- CSS3
+- GitHub Pages
 
-### `npm test`
+## Sayfalar
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Sayfa | Açıklama |
+| --- | --- |
+| `Hakkımda` | Kısa tanıtım, teknoloji alanları, yaklaşım ve deneyim özeti |
+| `Projelerim` | Frontend, Backend ve Full-Stack kategorilerine ayrılmış proje listesi |
+| `CV` | Eğitim, iş deneyimi, teknik yetenekler, projeler ve sertifikalar |
 
-### `npm run build`
+## Kurulum
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Projeyi yerelde çalıştırmak için:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Uygulama geliştirme modunda `http://localhost:3000` adresinde çalışır.
 
-### `npm run eject`
+## Komutlar
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Geliştirme sunucusunu başlatır.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+npm run build
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Production build oluşturur ve çıktıları `build` klasörüne yazar.
 
-## Learn More
+```bash
+npm test
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Test çalıştırıcısını başlatır.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
->>>>>>> master
+```bash
+npm run deploy
+```
+
+Projeyi GitHub Pages üzerine yayınlar. Yayınlama öncesinde otomatik olarak production build alınır.
+
+## Proje Yapısı
+
+```text
+src/
+  assets/
+    profile.jpg
+  components/
+    Footer.tsx
+    Navbar.tsx
+  pages/
+    About.tsx
+    Projects.tsx
+    Resume.tsx
+  App.tsx
+  index.css
+  index.tsx
+```
+
+## Öne Çıkan Projeler
+
+- Product Store App
+- Chat App
+- City Guide
+- Messaging App
+- Notefy
+- Movie App
+- Inventor Automation
+- Product List API
+- Portfolio Website
+
+## Geliştirici
+
+Mustafa Yücel  
+Full Stack Developer
+
+- GitHub: [someoxygen](https://github.com/someoxygen)
+- Portfolio: [someoxygen.github.io/my-portfolio](https://someoxygen.github.io/my-portfolio)
