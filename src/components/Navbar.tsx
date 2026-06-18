@@ -3,6 +3,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -13,6 +14,10 @@ const Navbar: React.FC = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location.pathname]);
 
   return (
     <nav className={`navbar navbar-expand-lg fixed-top transition-all duration-300 ${
@@ -26,22 +31,22 @@ const Navbar: React.FC = () => {
         <button
           className="navbar-toggler border-0"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
           aria-controls="navbarNav"
-          aria-expanded="false"
+          aria-expanded={isMenuOpen}
           aria-label="Toggle navigation"
+          onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <NavLink 
                 to="/" 
                 className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}
                 end
+                onClick={() => setIsMenuOpen(false)}
               >
                 <span className="nav-link-text">Hakkımda</span>
               </NavLink>
@@ -50,6 +55,7 @@ const Navbar: React.FC = () => {
               <NavLink 
                 to="/projects" 
                 className={`nav-link ${location.pathname === '/projects' ? 'active' : ''}`}
+                onClick={() => setIsMenuOpen(false)}
               >
                 <span className="nav-link-text">Projelerim</span>
               </NavLink>
@@ -58,6 +64,7 @@ const Navbar: React.FC = () => {
               <NavLink 
                 to="/resume" 
                 className={`nav-link ${location.pathname === '/resume' ? 'active' : ''}`}
+                onClick={() => setIsMenuOpen(false)}
               >
                 <span className="nav-link-text">CV</span>
               </NavLink>
