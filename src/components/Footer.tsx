@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope, FaHeart } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { FaGithub, FaLinkedin, FaEnvelope, FaHeart, FaPhone } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -43,7 +44,7 @@ const Footer: React.FC = () => {
                 <span className="text-white">Mustafa Yücel</span>
               </h4>
               <p className="text-muted mb-4">
-                4 yıllık endüstri deneyimine sahip, yaratıcı ve çözüm odaklı bir Full Stack Developer'ım. 
+                5 yıllık endüstri deneyimine sahip, yaratıcı ve çözüm odaklı bir Full Stack Developer'ım. 
                 C#, Node.js, Angular, React ve modern web teknolojileri ile projeler geliştiriyorum.
               </p>
               <div className="d-flex gap-3">
@@ -69,24 +70,19 @@ const Footer: React.FC = () => {
               <h6 className="fw-bold mb-3">Hızlı Linkler</h6>
               <ul className="list-unstyled">
                 <li className="mb-2">
-                  <a href="/my-portfolio/" className="text-muted text-decoration-none hover-text-white">
+                  <Link to="/" className="text-muted text-decoration-none hover-text-white">
                     Hakkımda
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="/my-portfolio/projects" className="text-muted text-decoration-none hover-text-white">
+                  <Link to="/projects" className="text-muted text-decoration-none hover-text-white">
                     Projelerim
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="/my-portfolio/resume" className="text-muted text-decoration-none hover-text-white">
+                  <Link to="/resume" className="text-muted text-decoration-none hover-text-white">
                     CV
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a href="/my-portfolio/contact" className="text-muted text-decoration-none hover-text-white">
-                    İletişim
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -121,6 +117,12 @@ const Footer: React.FC = () => {
                 <p className="text-muted mb-1">
                   <FaEnvelope className="me-2" />
                   mustafaycl37@gmail.com
+                </p>
+              </div>
+              <div className="mb-3">
+                <p className="text-muted mb-1">
+                  <FaPhone className="me-2" />
+                  0534 661 49 92
                 </p>
               </div>
               <div className="mb-3">

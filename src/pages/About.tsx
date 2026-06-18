@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import profilePic from '../assets/profile.jpg';
 
 const About: React.FC = () => {
@@ -13,17 +14,14 @@ const About: React.FC = () => {
                 Merhaba, ben <span className="text-warning">Mustafa Yücel</span>
               </h1>
               <p className="lead mb-4 opacity-90">
-                4 yıllık endüstri deneyimine sahip, yaratıcı ve çözüm odaklı bir Full Stack Developer'ım. 
+                5 yıllık endüstri deneyimine sahip, yaratıcı ve çözüm odaklı bir Full Stack Developer'ım. 
                 C#, Node.js, Angular, React ve modern web teknolojileri ile kullanıcı deneyimini ön planda 
                 tutan projeler geliştiriyorum.
               </p>
               <div className="d-flex gap-3 flex-wrap">
-                <a href="/my-portfolio/resume" className="btn btn-light btn-lg rounded-pill px-4">
+                <Link to="/resume" className="btn btn-light btn-lg rounded-pill px-4">
                   CV'mi Görüntüle
-                </a>
-                <a href="/my-portfolio/contact" className="btn btn-outline-light btn-lg rounded-pill px-4">
-                  İletişime Geç
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-6 text-center animate-slide-in-right">
@@ -147,7 +145,7 @@ const About: React.FC = () => {
                     <i className="fas fa-building me-2"></i>
                     Çuhadaroğlu Metal A.Ş.
                   </h5>
-                  <h6 className="text-muted">Full Stack Developer (Nisan 2025 – Günümüz)</h6>
+                  <h6 className="text-muted">Full Stack Developer (Nisan 2025 – Haziran 2026)</h6>
                   <ul className="card-text text-muted mt-3">
                     <li>Şirket içinde geliştirilen gizli bir uygulamada görev aldım.</li>
                     <li>JavaScript tabanlı frontend geliştirmeleri ile kullanıcı deneyimini güçlendirdim.</li>

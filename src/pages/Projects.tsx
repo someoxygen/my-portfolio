@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaExternalLinkAlt, FaEye } from 'react-icons/fa';
+import { FaGithub, FaEye } from 'react-icons/fa';
 
 interface Project {
   title: string;
@@ -226,23 +226,6 @@ const Projects: React.FC = () => {
                 </div>
               </div>
             ))}
-          </div>
-
-          {/* Call to Action */}
-          <div className="row justify-content-center mt-5">
-            <div className="col-lg-8 text-center animate-fade-in-up">
-              <div className="card border-0 shadow-sm bg-gradient text-white">
-                <div className="card-body py-5">
-                  <h3 className="fw-bold mb-3">Yeni Proje Fikriniz mi Var?</h3>
-                  <p className="mb-4 opacity-90">
-                    Birlikte harika projeler geliştirebiliriz. İletişime geçin ve fikirlerinizi paylaşın.
-                  </p>
-                  <a href="/my-portfolio/contact" className="btn btn-light btn-lg rounded-pill px-4">
-                    İletişime Geç
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
