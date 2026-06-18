@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  FaDownload,
   FaGraduationCap,
   FaBriefcase,
   FaCode,
@@ -47,7 +46,7 @@ const Resume: React.FC = () => {
     {
       title: 'Full Stack Developer',
       company: 'Çuhadaroğlu Metal A.Ş.',
-      period: 'Nisan 2025–Günümüz',
+      period: 'Nisan 2025–Haziran 2026',
       description:
         'Şirket içinde geliştirilen gizli bir uygulamada, JavaScript tabanlı frontend, Node.js ve .NET ile oluşturulmuş backend projeleri üzerinde müşteri ihtiyaçlarına göre yazılım geliştirmeleri.',
       technologies: ['JavaScript', 'Node.js', '.NET']
@@ -194,7 +193,7 @@ const Resume: React.FC = () => {
             <div className="col-lg-8 animate-fade-in-up">
               <h1 className="display-4 fw-bold mb-4">Özgeçmiş</h1>
               <p className="lead mb-5 opacity-90">
-                4 yıllık endüstri deneyimine sahip, yaratıcı ve çözüm odaklı bir Full Stack Developer'ım.
+                5 yıllık endüstri deneyimine sahip, yaratıcı ve çözüm odaklı bir Full Stack Developer'ım.
                 C#, Node.js, Angular, React ve modern web teknolojileri ile kullanıcı deneyimini ön planda
                 tutan projeler geliştiriyorum.
               </p>

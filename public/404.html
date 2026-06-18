@@ -1,14 +1,22 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>Redirecting…</title>
-<meta http-equiv="refresh" content="0; url=/my-portfolio/"></head><body>
-<script>
-(function() {
-  var l = window.location, base = '/my-portfolio';
-  if (l.pathname.startsWith(base)) {
-    var url = base + '/#' + l.pathname.substring(base.length) + l.search + l.hash;
-    l.replace(url);
-  } else {
-    l.replace(base + '/');
-  }
-})();
-</script>
-</body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+      (function() {
+        var pathSegmentsToKeep = 1;
+        var l = window.location;
+        l.replace(
+          l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+          l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') +
+          '/?/' +
+          l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash
+        );
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

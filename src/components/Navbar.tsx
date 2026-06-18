@@ -62,14 +62,6 @@ const Navbar: React.FC = () => {
                 <span className="nav-link-text">CV</span>
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink 
-                to="/contact" 
-                className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`}
-              >
-                <span className="nav-link-text">İletişim</span>
-              </NavLink>
-            </li>
           </ul>
         </div>
       </div>
