@@ -5,8 +5,19 @@
     <title>Redirecting...</title>
     <script>
       (function() {
-        var pathSegmentsToKeep = 1;
         var l = window.location;
+
+        if (l.pathname === '/my-portfolio' || l.pathname.indexOf('/my-portfolio/') === 0) {
+          var oldPath = l.pathname.replace(/^\/my-portfolio\/?/, '/');
+          var oldSearch = l.search[1] === '/' ? '' : l.search;
+          l.replace(
+            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+            oldPath + oldSearch + l.hash
+          );
+          return;
+        }
+
+        var pathSegmentsToKeep = 0;
         l.replace(
           l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
           l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') +

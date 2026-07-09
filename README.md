@@ -2,7 +2,7 @@
 
 React ve TypeScript ile geliştirilmiş kişisel portfolyo web sitesi. Proje; hakkımda bilgisi, teknik yetenekler, iş deneyimi, özgeçmiş ve GitHub projelerini tek bir responsive arayüzde sunar.
 
-Canlı site: [someoxygen.github.io/my-portfolio](https://someoxygen.github.io/my-portfolio)
+Canlı site: [someoxygen.github.io](https://someoxygen.github.io)
 
 ## Özellikler
 
@@ -105,4 +105,4 @@ Mustafa Yücel
 Full Stack Developer
 
 - GitHub: [someoxygen](https://github.com/someoxygen)
-- Portfolio: [someoxygen.github.io/my-portfolio](https://someoxygen.github.io/my-portfolio)
+- Portfolio: [someoxygen.github.io](https://someoxygen.github.io)
