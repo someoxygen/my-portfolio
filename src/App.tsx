@@ -9,7 +9,7 @@ import Resume from './pages/Resume';
 
 const App: React.FC = () => {
   return (
-    <Router basename="/my-portfolio">
+    <Router>
       <div className="d-flex flex-column min-vh-100">
         <Navbar />
         <main className="flex-grow-1" style={{ paddingTop: '80px' }}>
